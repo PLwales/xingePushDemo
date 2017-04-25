@@ -15,6 +15,11 @@
 		C40569091E9DDC9400C0C02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40569071E9DDC9400C0C02A /* LaunchScreen.storyboard */; };
 		C40569141E9DDC9400C0C02A /* xingePushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C40569131E9DDC9400C0C02A /* xingePushTests.m */; };
 		C405691F1E9DDC9400C0C02A /* xingePushUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C405691E1E9DDC9400C0C02A /* xingePushUITests.m */; };
+		C40569301E9DDD2600C0C02A /* libXG-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C405692D1E9DDD2600C0C02A /* libXG-SDK.a */; };
+		C40569331E9DF48C00C0C02A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40569321E9DF48C00C0C02A /* UserNotifications.framework */; };
+		C40569351E9DF4A000C0C02A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40569341E9DF4A000C0C02A /* CoreTelephony.framework */; };
+		C40569371E9DF4B000C0C02A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C40569361E9DF4B000C0C02A /* libz.tbd */; };
+		C40569391E9DF4BC00C0C02A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40569381E9DF4BC00C0C02A /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		C405691A1E9DDC9400C0C02A /* xingePushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xingePushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C405691E1E9DDC9400C0C02A /* xingePushUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xingePushUITests.m; sourceTree = "<group>"; };
 		C40569201E9DDC9400C0C02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C405692D1E9DDD2600C0C02A /* libXG-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libXG-SDK.a"; sourceTree = "<group>"; };
+		C405692E1E9DDD2600C0C02A /* XGPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPush.h; sourceTree = "<group>"; };
+		C405692F1E9DDD2600C0C02A /* XGSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSetting.h; sourceTree = "<group>"; };
+		C40569321E9DF48C00C0C02A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		C40569341E9DF4A000C0C02A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C40569361E9DF4B000C0C02A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C40569381E9DF4BC00C0C02A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C4DF2D001E9E04E10006136B /* xingePush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xingePush.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40569391E9DF4BC00C0C02A /* SystemConfiguration.framework in Frameworks */,
+				C40569371E9DF4B000C0C02A /* libz.tbd in Frameworks */,
+				C40569351E9DF4A000C0C02A /* CoreTelephony.framework in Frameworks */,
+				C40569331E9DF48C00C0C02A /* UserNotifications.framework in Frameworks */,
+				C40569301E9DDD2600C0C02A /* libXG-SDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,7 @@
 				C40569121E9DDC9400C0C02A /* xingePushTests */,
 				C405691D1E9DDC9400C0C02A /* xingePushUITests */,
 				C40568F71E9DDC9400C0C02A /* Products */,
+				C40569311E9DF48C00C0C02A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +120,8 @@
 		C40568F81E9DDC9400C0C02A /* xingePush */ = {
 			isa = PBXGroup;
 			children = (
+				C4DF2D001E9E04E10006136B /* xingePush.entitlements */,
+				C405692C1E9DDD1500C0C02A /* xg */,
 				C40568FC1E9DDC9400C0C02A /* AppDelegate.h */,
 				C40568FD1E9DDC9400C0C02A /* AppDelegate.m */,
 				C40568FF1E9DDC9400C0C02A /* ViewController.h */,
@@ -138,6 +159,27 @@
 				C40569201E9DDC9400C0C02A /* Info.plist */,
 			);
 			path = xingePushUITests;
+			sourceTree = "<group>";
+		};
+		C405692C1E9DDD1500C0C02A /* xg */ = {
+			isa = PBXGroup;
+			children = (
+				C405692D1E9DDD2600C0C02A /* libXG-SDK.a */,
+				C405692E1E9DDD2600C0C02A /* XGPush.h */,
+				C405692F1E9DDD2600C0C02A /* XGSetting.h */,
+			);
+			name = xg;
+			sourceTree = "<group>";
+		};
+		C40569311E9DF48C00C0C02A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C40569381E9DF4BC00C0C02A /* SystemConfiguration.framework */,
+				C40569361E9DF4B000C0C02A /* libz.tbd */,
+				C40569341E9DF4A000C0C02A /* CoreTelephony.framework */,
+				C40569321E9DF48C00C0C02A /* UserNotifications.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +249,13 @@
 				TargetAttributes = {
 					C40568F51E9DDC9400C0C02A = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 866CQ5259C;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					C405690E1E9DDC9400C0C02A = {
 						CreatedOnToolsVersion = 8.1;
@@ -422,8 +470,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xingePush/xingePush.entitlements;
+				DEVELOPMENT_TEAM = 866CQ5259C;
 				INFOPLIST_FILE = xingePush/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xingePush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cat.xingePush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -433,8 +488,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xingePush/xingePush.entitlements;
+				DEVELOPMENT_TEAM = 866CQ5259C;
 				INFOPLIST_FILE = xingePush/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xingePush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cat.xingePush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -505,6 +567,7 @@
 				C40569251E9DDC9400C0C02A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C40569261E9DDC9400C0C02A /* Build configuration list for PBXNativeTarget "xingePushTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +576,7 @@
 				C40569281E9DDC9400C0C02A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C40569291E9DDC9400C0C02A /* Build configuration list for PBXNativeTarget "xingePushUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +585,7 @@
 				C405692B1E9DDC9400C0C02A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
